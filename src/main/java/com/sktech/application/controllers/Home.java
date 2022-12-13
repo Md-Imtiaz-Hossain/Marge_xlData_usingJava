@@ -14,10 +14,5 @@ public class Home {
         return "index";
     }
 
-    @GetMapping("/login")
-    public  String login(Model model){
-        model.addAttribute("pageTitle", "Login");
-        return "login";
-    }
 
 }
