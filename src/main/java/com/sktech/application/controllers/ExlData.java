@@ -47,7 +47,7 @@ public class ExlData {
                             break;
                     }
                 }
-                System.out.println();
+                System.out.println("\n\n");
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -57,3 +57,8 @@ public class ExlData {
 
 //CellType.STRING
 //       CellType.NUMERIC
+// https://www.youtube.com/watch?v=GxCS_b3rRDc&list=PL7BYd102yEfW5r9Shkf0Ie7j-4IlXWIs-
+
+// https://www.youtube.com/watch?v=ipjl49Hgsg8&list=PLUDwpEzHYYLsN1kpIjOyYW6j_GLgOyA07
+
+// https://tableconvert.com/excel-to-sql
