@@ -125,3 +125,77 @@
                                             <td th:text="${u.}">PERMANENT_tdANA_OtdER</td>
                                             <td th:text="${u.}">FAtdER_NID</td>
                                             <td th:text="${u.}"> TRANSACTION_TYPE</td>
+
+
+                                               ID
+                                               STUDENT_ID
+                                               PRESENT_ADDRESS_LINE
+                                               PRESENT_COUNTRY_ID
+                                               PRESENT_DIVISION_ID
+                                               PRESENT_DISTRICT_ID
+                                               PRESENT_THANA_ID
+                                               PRESENT_THANA_IS_OTHERS
+                                               PRESENT_THANA_OTHERS
+                                               PERMANENT_ADDRESS_LINE
+                                               PERMANENT_COUNTRY_ID
+                                               PERMANENT_DIVISION_ID
+                                               PERMANENT_DISTRICT_ID
+                                               PERMANENT_THANA_ID
+                                               PERMANENT_THANA_IS_OTHERS
+                                               PERMANENT_THANA_OTHERS
+                                               LAST_MODIFIED
+                                               CREATED_ON
+                                               UPDATED_ON
+
+
+
+
+
+
+
+
+
+                                                  ID
+                                                  STUDENT_ID
+                                                  FULL_NAME
+                                                  DEPT_ID
+                                                  PROGRAM_ID
+                                                  ADMITTED_SEMESTER
+                                                  CURR_YEAR
+                                                  CURR_SEMESTER
+                                                  ENROLLMENT_TYPE
+                                                  LAST_ENROLLED_SEMESTER
+                                                  THEORY_SECTION
+                                                  SESSIONAL_SECTION
+                                                  ADVISER
+                                                  FATHER_NAME
+                                                  MOTHER_NAME
+                                                  BIRTH_DATE
+                                                  GENDER
+                                                  PRESENT_ADDRESS
+                                                  PERMANENT_ADDRESS
+                                                  MOBILE_NUMBER
+                                                  PHONE_NUMBER
+                                                  BLOOD_GROUP
+                                                  EMAIL_ADDRESS
+                                                  GUARDIAN_NAME
+                                                  GUARDIAN_MOBILE
+                                                  GUARDIAN_PHONE
+                                                  GUARDIAN_EMAIL
+                                                  LAST_MODIFIED
+                                                  STATUS
+                                                  CGPA
+                                                  NATIONALITY
+                                                  RECEIPT_ID
+                                                  FIRST_NAME
+                                                  LAST_NAME
+                                                  RELIGION
+                                                  QUOTA_TYPE
+                                                  IS_WAIVED
+                                                  WAIVED_PERCENTAGE
+                                                  DEGREE_AWARD_SEMESTER
+                                                  DEGREE_AWARD_DATE
+                                                  PERSONAL_EMAIL_ADDRESS
+                                                  NID
+                                                  BIRTH_CERTIFICATE_NO
+                                                  FATHER_NID

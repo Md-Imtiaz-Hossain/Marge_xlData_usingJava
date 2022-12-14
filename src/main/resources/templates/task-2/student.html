@@ -53,137 +53,97 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                     <tr>
-                                        <th>Id</th>
-                                        <th>SEMESTER_ID</th>
-                                        <th>RECEIPT_ID</th>
-                                        <th>PIN</th>
-                                        <th>HSC_BOARD</th>
-                                        <th>HSC_ROLL</th>
-                                        <th>HSC_REGNO</th>
-                                        <th>HSC_YEAR</th>
-                                        <th>HSC_GROUP</th>
-                                        <th>SSC_BOARD</th>
-                                        <th>SSC_ROLL</th>
-                                        <th>SSC_YEAR</th>
-                                        <th>SSC_GROUP</th>
-                                        <th>GENDER</th>
-                                        <th>DATE_OF_BIRTH</th>
-                                        <th>STUDENT_NAME</th>
+                                        <th>ID</th>
+                                        <th>STUDENT_ID</th>
+                                        <th>FULL_NAME</th>
+                                        <th>DEPT_ID</th>
+                                        <th>PROGRAM_ID</th>
+                                        <th>ADMITTED_SEMESTER</th>
+                                        <th>CURR_YEAR</th>
+                                        <th>CURR_SEMESTER</th>
+                                        <th>ENROLLMENT_TYPE</th>
+                                        <th>LAST_ENROLLED_SEMESTER</th>
+                                        <th>THEORY_SECTION</th>
+                                        <th>SESSIONAL_SECTION</th>
+                                        <th>ADVISER</th>
                                         <th>FATHER_NAME</th>
                                         <th>MOTHER_NAME</th>
-                                        <th>SSC_GPA</th>
-                                        <th>HSC_GPA</th>
-                                        <th>QUOTA</th>
-                                        <th>ADMISSION_ROLL</th>
-                                        <th>MERIT_SL_NO</th>
-                                        <th>STUDENT_ID</th>
-                                        <th>ALLOCATED_PROGRAM_ID</th>
-                                        <th>MIGRATION_STATUS</th>
-                                        <th>LAST_MODIFIED</th>
-                                        <th>UNIT</th>
-                                        <th>PROGRAM_TYPE</th>
-                                        <th>NID</th>
-                                        <th>BIRTH_REG</th>
-                                        <th>PASSPORT</th>
-                                        <th>PROGRAM_ID_BY_MERIT</th>
-                                        <th>PROGRAM_ID_BY_TRANSFER</th>
-                                        <th>PRESENT_STATUS</th>
-                                        <th>DEADLINE</th>
-                                        <th>VERIFICATION_STATUS</th>
-                                        <th>MIGRATED_FROM</th>
-                                        <th>UNDERTAKEN_DEADLINE</th>
-                                        <th>STATUS</th>
-                                        <th>MIGRATION_NO</th>
-                                        <th>FIRST_NAME</th>
-                                        <th>LAST_NAME</th>
+                                        <th>BIRTH_DATE</th>
+                                        <th>GENDER</th>
+                                        <th>PRESENT_ADDRESS</th>
+                                        <th>PERMANENT_ADDRESS</th>
+                                        <th>MOBILE_NUMBER</th>
+                                        <th>PHONE_NUMBER</th>
                                         <th>BLOOD_GROUP</th>
-                                        <th>MOBILE</th>
-                                        <th>EMAIL</th>
-                                        <th>RELIGION</th>
+                                        <th>EMAIL_ADDRESS</th>
                                         <th>GUARDIAN_NAME</th>
                                         <th>GUARDIAN_MOBILE</th>
-                                        <th>PRESENT_ADDRESS_LINE</th>
-                                        <th>PRESENT_COUNTRY_ID</th>
-                                        <th>PRESENT_DIVISION_ID</th>
-                                        <th>PRESENT_DISTRICT_ID</th>
-                                        <th>PRESENT_THANA_ID</th>
-                                        <th>PRESENT_THANA_OTHER</th>
-                                        <th>PERMANENT_ADDRESS_LINE</th>
-                                        <th>PERMANENT_COUNTRY_ID</th>
-                                        <th>PERMANENT_DIVISION_ID</th>
-                                        <th>PERMANENT_DISTRICT_ID</th>
-                                        <th>PERMANENT_THANA_ID</th>
-                                        <th>PERMANENT_THANA_OTHER</th>
+                                        <th>GUARDIAN_PHONE</th>
+                                        <th>GUARDIAN_EMAIL</th>
+                                        <th>LAST_MODIFIED</th>
+                                        <th>STATUS</th>
+                                        <th>CGPA</th>
+                                        <th>NATIONALITY</th>
+                                        <th>RECEIPT_ID</th>
+                                        <th>FIRST_NAME</th>
+                                        <th>LAST_NAME</th>
+                                        <th>RELIGION</th>
+                                        <th>QUOTA_TYPE</th>
+                                        <th>IS_WAIVED</th>
+                                        <th>WAIVED_PERCENTAGE</th>
+                                        <th>DEGREE_AWARD_SEMESTER</th>
+                                        <th>DEGREE_AWARD_DATE</th>
+                                        <th>PERSONAL_EMAIL_ADDRESS</th>
+                                        <th>NID</th>
+                                        <th>BIRTH_CERTIFICATE_NO</th>
                                         <th>FATHER_NID</th>
-                                        <th> TRANSACTION_TYPE</th>
                                     </tr>
                                     </thead>
-                                    <tbody>
-                                    <tr th:each="u: ${students}">
+                                    <tr th:each="u: ${studentsinfo}">
                                         <td th:text="${u.ID}"></td>
-                                        <td th:text="${u.SEMESTER_ID}"></td>
-                                        <td th:text="${u.RECEIPT_ID}"></td>
-                                        <td th:text="${u.PIN}"></td>
-                                        <td th:text="${u.HSC_BOARD}"></td>
-                                        <td th:text="${u.HSC_ROLL}"></td>
-                                        <td th:text="${u.HSC_REGNO}"></td>
-                                        <td th:text="${u.HSC_YEAR}"></td>
-                                        <td th:text="${u.HSC_GROUP}"></td>
-                                        <td th:text="${u.SSC_BOARD}"></td>
-                                        <td th:text="${u.SSC_ROLL}"></td>
-                                        <td th:text="${u.SSC_YEAR}"></td>
-                                        <td th:text="${u.SSC_GROUP}"></td>
-                                        <td th:text="${u.GENDER}"></td>
-                                        <td th:text="${u.DATE_OF_BIRTH}"></td>
-                                        <td th:text="${u.STUDENT_NAME}"></td>
+                                        <td th:text="${u.STUDENT_ID}"></td>
+                                        <td th:text="${u.FULL_NAME}"></td>
+                                        <td th:text="${u.DEPT_ID}"></td>
+                                        <td th:text="${u.PROGRAM_ID}"></td>
+                                        <td th:text="${u.ADMITTED_SEMESTER}"></td>
+                                        <td th:text="${u.CURR_YEAR}"></td>
+                                        <td th:text="${u.CURR_SEMESTER}"></td>
+                                        <td th:text="${u.ENROLLMENT_TYPE}"></td>
+                                        <td th:text="${u.LAST_ENROLLED_SEMESTER}"></td>
+                                        <td th:text="${u.THEORY_SECTION}"></td>
+                                        <td th:text="${u.SESSIONAL_SECTION}"></td>
+                                        <td th:text="${u.ADVISER}"></td>
                                         <td th:text="${u.FATHER_NAME}"></td>
                                         <td th:text="${u.MOTHER_NAME}"></td>
-                                        <td th:text="${u.SSC_GPA}"></td>
-                                        <td th:text="${u.HSC_GPA}"></td>
-                                        <td th:text="${u.QUOTA}"></td>
-                                        <td th:text="${u.ADMISSION_ROLL}"></td>
-                                        <td th:text="${u.MERIT_SL_NO}"></td>
-                                        <td th:text="${u.STUDENT_ID}"></td>
-                                        <td th:text="${u.ALLOCATED_PROGRAM_ID}"></td>
-                                        <td th:text="${u.MIGRATION_STATUS}"></td>
-                                        <td th:text="${u.LAST_MODIFIED}"></td>
-                                        <td th:text="${u.UNIT}"></td>
-                                        <td th:text="${u.PROGRAM_TYPE}"></td>
-                                        <td th:text="${u.NID}"></td>
-                                        <td th:text="${u.BIRTH_REG}"></td>
-                                        <td th:text="${u.PASSPORT}"></td>
-                                        <td th:text="${u.PROGRAM_ID_BY_MERIT}"></td>
-                                        <td th:text="${u.PROGRAM_ID_BY_TRANSFER}"></td>
-                                        <td th:text="${u.PRESENT_STATUS}"></td>
-                                        <td th:text="${u.DEADLINE}"></td>
-                                        <td th:text="${u.VERIFICATION_STATUS}"></td>
-                                        <td th:text="${u.MIGRATED_FROM}"></td>
-                                        <td th:text="${u.UNDERTAKEN_DEADLINE}"></td>
-                                        <td th:text="${u.STATUS}"></td>
-                                        <td th:text="${u.MIGRATION_NO}"></td>
-                                        <td th:text="${u.FIRST_NAME}"></td>
-                                        <td th:text="${u.LAST_NAME}"></td>
+                                        <td th:text="${u.BIRTH_DATE}"></td>
+                                        <td th:text="${u.GENDER}"></td>
+                                        <td th:text="${u.PRESENT_ADDRESS}"></td>
+                                        <td th:text="${u.PERMANENT_ADDRESS}"></td>
+                                        <td th:text="${u.MOBILE_NUMBER}"></td>
+                                        <td th:text="${u.PHONE_NUMBER}"></td>
                                         <td th:text="${u.BLOOD_GROUP}"></td>
-                                        <td th:text="${u.MOBILE}"></td>
-                                        <td th:text="${u.EMAIL}"></td>
-                                        <td th:text="${u.RELIGION}"></td>
+                                        <td th:text="${u.EMAIL_ADDRESS}"></td>
                                         <td th:text="${u.GUARDIAN_NAME}"></td>
                                         <td th:text="${u.GUARDIAN_MOBILE}"></td>
-                                        <td th:text="${u.PRESENT_ADDRESS_LINE}"></td>
-                                        <td th:text="${u.PRESENT_COUNTRY_ID}"></td>
-                                        <td th:text="${u.PRESENT_DIVISION_ID}"></td>
-                                        <td th:text="${u.PRESENT_DISTRICT_ID}"></td>
-                                        <td th:text="${u.PRESENT_THANA_ID}"></td>
-                                        <td th:text="${u.PRESENT_THANA_OTHER}"></td>
-                                        <td th:text="${u.PERMANENT_ADDRESS_LINE}"></td>
-                                        <td th:text="${u.PERMANENT_COUNTRY_ID}"></td>
-                                        <td th:text="${u.PERMANENT_DIVISION_ID}"></td>
-                                        <td th:text="${u.PERMANENT_DISTRICT_ID}"></td>
-                                        <td th:text="${u.PERMANENT_THANA_ID}"></td>
-                                        <td th:text="${u.PERMANENT_THANA_OTHER}"></td>
+                                        <td th:text="${u.GUARDIAN_PHONE}"></td>
+                                        <td th:text="${u.GUARDIAN_EMAIL}"></td>
+                                        <td th:text="${u.LAST_MODIFIED}"></td>
+                                        <td th:text="${u.STATUS}"></td>
+                                        <td th:text="${u.CGPA}"></td>
+                                        <td th:text="${u.NATIONALITY}"></td>
+                                        <td th:text="${u.RECEIPT_ID}"></td>
+                                        <td th:text="${u.FIRST_NAME}"></td>
+                                        <td th:text="${u.LAST_NAME}"></td>
+                                        <td th:text="${u.RELIGION}"></td>
+                                        <td th:text="${u.QUOTA_TYPE}"></td>
+                                        <td th:text="${u.IS_WAIVED}"></td>
+                                        <td th:text="${u.WAIVED_PERCENTAGE}"></td>
+                                        <td th:text="${u.DEGREE_AWARD_SEMESTER}"></td>
+                                        <td th:text="${u.DEGREE_AWARD_DATE}"></td>
+                                        <td th:text="${u.PERSONAL_EMAIL_ADDRESS}"></td>
+                                        <td th:text="${u.NID}"></td>
+                                        <td th:text="${u.BIRTH_CERTIFICATE_NO}"></td>
                                         <td th:text="${u.FATHER_NID}"></td>
-                                        <td th:text="${u.TRANSACTION_TYPE}"></td>
-
                                     </tr>
                                     </tbody>
                                 </table>

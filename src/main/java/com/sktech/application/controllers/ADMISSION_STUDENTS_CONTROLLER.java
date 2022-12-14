@@ -38,9 +38,10 @@ public class ADMISSION_STUDENTS_CONTROLLER {
     @GetMapping("/address")
     public String address(Model model) {
         List<STUDENT_ADDRESS> address = studentAddressRepo.findAll();
+        System.out.println(address);
         model.addAttribute("address", address);
         //return "task-2/admission-students";
-        return "task-2/admission-students";
+        return "task-2/student-address";
     }
 
     @GetMapping("/studentsinfo")

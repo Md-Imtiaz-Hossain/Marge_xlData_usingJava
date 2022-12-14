@@ -15,7 +15,7 @@ import javax.persistence.*;
 public class STUDENT_ADDRESS {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer ID;
+    private String ID;
     private String STUDENT_ID;
     private String PRESENT_ADDRESS_LINE;
     private String PRESENT_COUNTRY_ID;
