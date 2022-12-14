@@ -1,9 +1,11 @@
 package com.sktech.application.controllers;
 
 import com.sktech.application.entity.ADMISSION_STUDENTS;
+import com.sktech.application.entity.MIX;
 import com.sktech.application.entity.STUDENT;
 import com.sktech.application.entity.STUDENT_ADDRESS;
 import com.sktech.application.repositories.ADMISSION_STUDENTS_REPO;
+import com.sktech.application.repositories.MIX_ENTITY_REPO;
 import com.sktech.application.repositories.STUDENT_ADDRESS_REPO;
 import com.sktech.application.repositories.STUDENT_REPO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,12 +29,14 @@ public class ADMISSION_STUDENTS_CONTROLLER {
     @Autowired
     STUDENT_REPO studentRepo;
 
+    @Autowired
+    MIX_ENTITY_REPO mixEntityRepo;
+
     @GetMapping("/admission")
     public String admission(Model model) {
         List<ADMISSION_STUDENTS> admission_students = admissionStudentsRepo.findAll();
         model.addAttribute("students", admission_students);
         return "task-2/admission-students";
-       // return "task-2/student-address";
     }
 
     @GetMapping("/address")
@@ -40,7 +44,6 @@ public class ADMISSION_STUDENTS_CONTROLLER {
         List<STUDENT_ADDRESS> address = studentAddressRepo.findAll();
         System.out.println(address);
         model.addAttribute("address", address);
-        //return "task-2/admission-students";
         return "task-2/student-address";
     }
 
@@ -48,8 +51,15 @@ public class ADMISSION_STUDENTS_CONTROLLER {
     public String student(Model model) {
         List<STUDENT> studentsinfo = studentRepo.findAll();
         model.addAttribute("studentsinfo", studentsinfo);
-        //return "task-2/admission-students";
         return "task-2/student";
+    }
+
+
+    @GetMapping("/mix")
+    public String mix(Model model) {
+        List<MIX> mix = mixEntityRepo.findAll();
+        model.addAttribute("mix", mix);
+        return "task-2/mix";
     }
 
 
