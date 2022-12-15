@@ -1,3 +1,109 @@
+  ========== mix =========
+
+      SEMESTER_ID;
+      private String RECEIPT_ID;
+      private String PIN;
+      HSC_BOARD;
+      private String HSC_ROLL;
+      private String HSC_REGNO;
+      HSC_YEAR;
+      private String HSC_GROUP;
+      SSC_BOARD;
+      private String SSC_ROLL;
+      SSC_YEAR;
+      private String SSC_GROUP;
+      GENDER;
+      private String DATE_OF_BIRTH;
+      STUDENT_NAME;
+      FATHER_NAME;
+      MOTHER_NAME;
+      SSC_GPA;
+      HSC_GPA;
+      private String QUOTA;
+      private String ADMISSION_ROLL;
+      private String MERIT_SL_NO;
+      STUDENT_ID;
+      private String ALLOCATED_PROGRAM_ID;
+      private String MIGRATION_STATUS;
+      private String LAST_MODIFIED;
+      private String UNIT;
+      private String PROGRAM_TYPE;
+      private String NID;
+      private String BIRTH_REG;
+      private String PASSPORT;
+      private String PROGRAM_ID_BY_MERIT;
+      private String PROGRAM_ID_BY_TRANSFER;
+      private String PRESENT_STATUS;
+      private String DEADLINE;
+      private String VERIFICATION_STATUS;
+      private String MIGRATED_FROM;
+      private String UNDERTAKEN_DEADLINE;
+      STATUS;
+      private String MIGRATION_NO;
+      private String FIRST_NAME;
+      private String LAST_NAME;
+      private String BLOOD_GROUP;
+      private String MOBILE;
+      private String EMAIL;
+      RELIGION;
+      private String GUARDIAN_NAME;
+      private String GUARDIAN_MOBILE;
+      private String PRESENT_ADDRESS_LINE;
+      private String PRESENT_COUNTRY_ID;
+      private String PRESENT_DIVISION_ID;
+      private String PRESENT_DISTRICT_ID;
+      private String PRESENT_THANA_ID;
+      private String PRESENT_THANA_OTHER;
+      PERMANENT_ADDRESS_LINE;
+      private String PERMANENT_COUNTRY_ID;
+      private String PERMANENT_DIVISION_ID;
+      private String PERMANENT_DISTRICT_ID;
+      private String PERMANENT_THANA_ID;
+      private String PERMANENT_THANA_OTHER;
+      private String FATHER_NID;
+      private String TRANSACTION_TYPE;
+
+      //  Student
+
+      DEPT_ID;
+      PROGRAM_ID;
+      private String ADMITTED_SEMESTER;
+      private String CURR_YEAR;
+      private String CURR_SEMESTER;
+      private String ENROLLMENT_TYPE;
+      private String LAST_ENROLLED_SEMESTER;
+      private String THEORY_SECTION;
+      private String SESSIONAL_SECTION;
+      private String ADVISER;
+      private String BIRTH_DATE;
+      private String PRESENT_ADDRESS;
+      PERMANENT_ADDRESS;
+      private String MOBILE_NUMBER;
+      private String PHONE_NUMBER;
+      private String EMAIL_ADDRESS;
+      private String GUARDIAN_PHONE;
+      private String GUARDIAN_EMAIL;
+      private String CGPA;
+      private String NATIONALITY;
+      QUOTA_TYPE;
+      private String IS_WAIVED;
+      private String WAIVED_PERCENTAGE;
+      private String DEGREE_AWARD_SEMESTER;
+      private String DEGREE_AWARD_DATE;
+      private String PERSONAL_EMAIL_ADDRESS;
+      private String BIRTH_CERTIFICATE_NO;
+
+      //  Address
+
+      private String PRESENT_THANA_IS_OTHERS;
+      private String PRESENT_THANA_OTHERS;
+      private String PERMANENT_THANA_IS_OTHERS;
+      private String PERMANENT_THANA_OTHERS;
+      private String CREATED_ON;
+      private String UPDATED_ON;
+
+  ============  Mix ==============
+
     Integer ID
      <th>SEMESTER_ID</th>
      <th>RECEIPT_ID</th>

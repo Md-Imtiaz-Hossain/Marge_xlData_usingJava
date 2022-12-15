@@ -43,7 +43,9 @@ public class ADMISSION_STUDENTS_CONTROLLER {
     public String address(Model model) {
         List<STUDENT_ADDRESS> address = studentAddressRepo.findAll();
         System.out.println(address);
+        //List<MIX> mix = mixEntityRepo.findAll();
         model.addAttribute("address", address);
+        //model.addAttribute("mix", mix);
         return "task-2/student-address";
     }
 
